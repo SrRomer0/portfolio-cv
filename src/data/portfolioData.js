@@ -1,3 +1,7 @@
+import { FaJava, FaPython, FaDocker, FaReact, FaGithub, FaServer, FaLayerGroup, FaBolt, FaHtml5, FaGitAlt, FaCloud } from 'react-icons/fa';
+import { SiSpringboot, SiSpringsecurity, SiFastapi, SiTypescript, SiJavascript, SiPostgresql, SiMysql, SiHibernate, SiApachemaven, SiExpo, SiTailwindcss, SiSqlalchemy, SiLiquibase, SiHtmx, SiThymeleaf } from 'react-icons/si';
+import { TbHexagon, TbMicroscope } from 'react-icons/tb';
+
 // Adoptify Images
 import imgAdoptifyMain from '../assets/images/Captura de pantalla 2026-06-16 151603.webp';
 import imgAdoptify1 from '../assets/images/Captura de pantalla 2026-06-03 220216.webp';
@@ -27,12 +31,65 @@ export const personalInfo = {
 };
 
 export const skills = [
-  { name: "Backend", items: ["Java 17", "Spring Boot 3", "Spring Cloud", "Spring Security", "Python", "FastAPI"] },
-  { name: "Arquitectura", items: ["Microservicios", "Clean Architecture", "Hexagonal", "DDD", "Domain Events"] },
-  { name: "Frontend & Web", items: ["Thymeleaf", "HTMX", "HTML/CSS", "JavaScript", "TypeScript"] },
-  { name: "Conocimientos Mobile", items: ["React Native", "Expo", "NativeWind"] },
-  { name: "Database & ORM", items: ["MySQL", "PostgreSQL", "JPA/Hibernate", "SQLAlchemy", "Liquibase"] },
-  { name: "DevOps & Tools", items: ["Docker", "Docker Compose", "Git", "GitHub", "Maven"] }
+  { 
+    name: "Backend", 
+    items: [
+      { name: "Java 17", icon: FaJava },
+      { name: "Spring Boot 3", icon: SiSpringboot },
+      { name: "Spring Cloud", icon: FaCloud },
+      { name: "Spring Security", icon: SiSpringsecurity },
+      { name: "Python", icon: FaPython },
+      { name: "FastAPI", icon: SiFastapi }
+    ] 
+  },
+  { 
+    name: "Arquitectura", 
+    items: [
+      { name: "Microservicios", icon: TbMicroscope },
+      { name: "Clean Architecture", icon: FaLayerGroup },
+      { name: "Hexagonal", icon: TbHexagon },
+      { name: "DDD", icon: FaServer },
+      { name: "Domain Events", icon: FaBolt }
+    ] 
+  },
+  { 
+    name: "Frontend & Web", 
+    items: [
+      { name: "Thymeleaf", icon: SiThymeleaf },
+      { name: "HTMX", icon: SiHtmx },
+      { name: "HTML/CSS", icon: FaHtml5 },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript }
+    ] 
+  },
+  { 
+    name: "Conocimientos Mobile", 
+    items: [
+      { name: "React Native", icon: FaReact },
+      { name: "Expo", icon: SiExpo },
+      { name: "NativeWind", icon: SiTailwindcss }
+    ] 
+  },
+  { 
+    name: "Database & ORM", 
+    items: [
+      { name: "MySQL", icon: SiMysql },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "JPA/Hibernate", icon: SiHibernate },
+      { name: "SQLAlchemy", icon: SiSqlalchemy },
+      { name: "Liquibase", icon: SiLiquibase }
+    ] 
+  },
+  { 
+    name: "DevOps & Tools", 
+    items: [
+      { name: "Docker", icon: FaDocker },
+      { name: "Docker Compose", icon: FaDocker },
+      { name: "Git", icon: FaGitAlt },
+      { name: "GitHub", icon: FaGithub },
+      { name: "Maven", icon: SiApachemaven }
+    ] 
+  }
 ];
 
 export const experience = [
@@ -72,6 +129,7 @@ export const projects = [
     shortDescription: "Sistema distribuido Cloud-Native con Clean Architecture, Spring Cloud y Java 17.",
     fullDescription: "Plataforma integral de gestión para refugios de animales construida sobre una arquitectura de Microservicios con Java 17 y Spring Boot 3.\n\n▸ Arquitectura (El Porqué): Elegí una Arquitectura Hexagonal y Vertical Slicing para aislar la lógica de dominio. Esto garantiza que si mañana el refugio necesita migrar de framework o de base de datos, el core del negocio permanezca intacto. La separación en Microservicios evita cuellos de botella en la escalabilidad.\n\n▸ Infraestructura Cloud: Para asegurar alta disponibilidad, implementé Spring Cloud con Eureka (Service Discovery) y API Gateway. El patrón Database-per-Service aísla los datos, evitando bloqueos en base de datos al realizar consultas masivas.\n\n▸ Seguridad: Al manejar datos confidenciales de adoptantes, descarté el almacenamiento local de tokens. Centralicé la seguridad Stateless inyectando JWT exclusivamente en cookies HttpOnly, mitigando de raíz los ataques XSS.\n\n▸ Lógica de Negocio: Automaticé los procesos manuales del refugio usando Schedulers (@Scheduled) para los seguimientos de adaptación. Implementé Domain Events asíncronos para desacoplar el envío de notificaciones y mejorar los tiempos de respuesta del API.\n\n▸ Frontend (Rendimiento): Para evitar la sobrecarga y el coste de mantenimiento de frameworks SPA como React en un entorno de gestión interna, implementé Thymeleaf + HTMX. Logré cargas casi instantáneas y la misma interactividad fluida, reduciendo drásticamente el peso del bundle JavaScript.",
     image: imgAdoptifyMain,
+    youtubeVideoId: "eoThPjJFCPQ",
     gallery: [
       imgAdoptify1,
       imgAdoptify2,

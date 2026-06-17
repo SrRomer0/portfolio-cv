@@ -28,8 +28,9 @@ export default function SkillsSection() {
             <h3 className="text-lg font-semibold text-white mb-4">{skillGroup.name}</h3>
             <div className="flex flex-wrap gap-2">
               {skillGroup.items.map((item, i) => (
-                <span key={i} className="px-3 py-1.5 rounded-lg bg-white/5 text-sm text-gray-300 font-medium">
-                  {item}
+                <span key={i} className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-sm text-gray-300 font-medium hover:bg-white/10 transition-colors">
+                  <item.icon className="text-brand-400" size={16} />
+                  {item.name}
                 </span>
               ))}
             </div>

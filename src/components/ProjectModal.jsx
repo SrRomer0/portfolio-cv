@@ -47,7 +47,16 @@ export default function ProjectModal({ project, onClose }) {
             isMobile ? 'h-[500px] pt-8 pb-4' : 'pt-10 pb-12'
           }`}
         >
-          {project.video ? (
+          {project.youtubeVideoId ? (
+            <MockupFrame type={project.type} title={project.id}>
+              <iframe
+                src={`https://www.youtube.com/embed/${project.youtubeVideoId}?autoplay=1&mute=1&loop=1&playlist=${project.youtubeVideoId}&controls=0&showinfo=0&rel=0`}
+                className={isMobile ? "w-full h-full object-cover object-top" : "w-full aspect-video"}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </MockupFrame>
+          ) : project.video ? (
             <MockupFrame type={project.type} title={project.id}>
               <video
                 src={project.video}

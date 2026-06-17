@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-500: #8b5cf6; /* Violet */
+  --color-brand-600: #7c3aed;
+  --color-accent-500: #3b82f6; /* Blue */
+  --color-accent-600: #2563eb;
+  
+  --color-dark-bg: #0f1115;
+  --color-dark-surface: #1a1d24;
+  --color-dark-surface-hover: #232730;
+  --color-dark-border: #2e3440;
+  
+  --color-mockup-bg: #0f111a;
+  --color-mockup-header: #1a1d29;
+  --color-mockup-ide: #12131c;
+}
+
+body {
+  @apply bg-[#0f1115] text-gray-200 antialiased font-sans;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.glass-card {
+  @apply bg-[#1a1d24]/80 backdrop-blur-lg border border-white/10 shadow-xl;
+}

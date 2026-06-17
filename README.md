@@ -7,7 +7,7 @@
     <a href="https://github.com/SrRomer0/portfolio-cv"><strong>Explorar el código »</strong></a>
     <br />
     <br />
-    <a href="#">Ver Demo en vivo</a>
+    <a href="https://portfolio-cv-vert-ten.vercel.app/">Ver Demo en vivo</a>
     ·
     <a href="https://github.com/SrRomer0/portfolio-cv/issues">Reportar un Bug</a>
   </p>

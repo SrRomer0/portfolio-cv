@@ -34,6 +34,8 @@ export default function Header() {
             whileTap={{ scale: 0.95 }}
             href={personalInfo.pdfCvPath} 
             download
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 rounded-full bg-brand-600 hover:bg-brand-500 text-white font-medium transition-all shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)]"
           >
             <Download size={20} />

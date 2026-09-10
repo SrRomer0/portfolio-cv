@@ -22,7 +22,7 @@ import imgApiMain from '../assets/images/API_RESTful_FASTAPI.webp';
 
 export const personalInfo = {
   name: "Diego Romero",
-  role: "Full-Stack Developer",
+  role: "Backend Developer",
   tagline: "Técnico Superior en DAW especializado en el desarrollo de arquitecturas escalables e interfaces modernas.",
   github: "https://github.com/SrRomer0",
   linkedin: "https://www.linkedin.com/in/diego-r-4959ba2b9",
@@ -95,7 +95,7 @@ export const skills = [
 export const experience = [
   {
     id: 2,
-    role: "Desarrollador Full-Stack (TFG)",
+    role: "Desarrollador Backend (TFG)",
     company: "Refugio de Animales: Gestión Integral 4.0",
     period: "Mar - Jun 2026",
     description: "Proyecto de Fin de Grado (TFG) para DAW. Plataforma integral basada en arquitectura de microservicios con Spring Cloud, diseñada para escalar y desacoplar lógica de negocio de centros de acogida.",

@@ -1,5 +1,5 @@
-import { FaJava, FaPython, FaDocker, FaReact, FaGithub, FaServer, FaLayerGroup, FaBolt, FaHtml5, FaGitAlt, FaCloud } from 'react-icons/fa';
-import { SiSpringboot, SiSpringsecurity, SiFastapi, SiTypescript, SiJavascript, SiPostgresql, SiMysql, SiHibernate, SiApachemaven, SiExpo, SiTailwindcss, SiSqlalchemy, SiLiquibase, SiHtmx, SiThymeleaf } from 'react-icons/si';
+﻿import { FaJava, FaPython, FaDocker, FaReact, FaGithub, FaServer, FaLayerGroup, FaBolt, FaHtml5, FaGitAlt, FaCloud } from 'react-icons/fa';
+import { SiSpringboot, SiSpringsecurity, SiFastapi, SiTypescript, SiJavascript, SiPostgresql, SiMysql, SiHibernate, SiApachemaven, SiExpo, SiTailwindcss, SiSqlalchemy, SiLiquibase, SiHtmx, SiThymeleaf, SiPostman } from 'react-icons/si';
 import { TbHexagon, TbMicroscope } from 'react-icons/tb';
 
 // Adoptify Images
@@ -84,7 +84,7 @@ export const skills = [
     name: "DevOps & Tools", 
     items: [
       { name: "Docker", icon: FaDocker },
-      { name: "Docker Compose", icon: FaDocker },
+      { name: "Postman", icon: SiPostman },
       { name: "Git", icon: FaGitAlt },
       { name: "GitHub", icon: FaGithub },
       { name: "Maven", icon: SiApachemaven }
